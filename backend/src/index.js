@@ -1,3 +1,4 @@
+import './config/polyfills.js';
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
@@ -17,8 +18,12 @@ dotenv.config();
 
 // Connect to Database
 connectDB().then(() => {
-  // Initialize Interview Knowledge Base with 50 docs
-  import('./config/documentIndexer.js').then(m => m.initializeInterviewKB());
+  // Initialize Interview Knowledge Base with 50 docs only in local development
+  if (!process.env.VERCEL) {
+    import('./config/documentIndexer.js').then(m => m.initializeInterviewKB());
+  } else {
+    console.log('[DocumentIndexer] Running on Vercel. Skipping startup document indexing (already synced).');
+  }
 });
 
 const app = express();
@@ -62,6 +67,11 @@ app.use((err, req, res, next) => {
 });
 
 // Start Server
-app.listen(PORT, () => {
-  console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
+  });
+}
+
+export default app;
+
