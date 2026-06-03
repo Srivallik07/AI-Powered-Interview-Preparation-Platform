@@ -1,0 +1,2 @@
+Prioritizing Tasks under Tight Deadlines:
+Use the Eisenhower Matrix to classify tasks: Important & Urgent, Important but not Urgent, Urgent but not Important, or neither. Scope-boxing features, identifying MVP paths, and communicating resource/deadline constraints to product managers ensures project delivery.

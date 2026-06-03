@@ -1,0 +1,2 @@
+MongoDB Replica Set Architecture:
+MongoDB replication ensures high availability via Replica Sets consisting of one Primary node (handles writes) and multiple Secondary nodes (replicate primary log). Automatic failover occurs if the primary goes offline. Read preferences allow secondary read scaling.

@@ -1,0 +1,2 @@
+Database Normalization Levels (1NF to BCNF):
+Normalization structures database schemas to minimize redundancy and dependency anomalies. 1NF removes repeating groups. 2NF removes partial dependencies. 3NF removes transitive dependencies. BCNF (Boyce-Codd Normal Form) resolves composite key anomalies.

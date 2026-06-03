@@ -1,0 +1,2 @@
+Microservices vs Monolithic Architectures:
+Monoliths package all components into a single deployable unit. Microservices split functionality into small, loosely coupled services communicating via HTTP/gRPC. Microservices offer scaling flexibility and independent deployment cycles but increase operation, network, and eventual consistency overhead.

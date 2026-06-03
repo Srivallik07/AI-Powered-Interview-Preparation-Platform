@@ -1,0 +1,2 @@
+Callbacks vs Promises vs Observables:
+Callbacks pass functions as arguments, leading to nested callback hell. Promises structure async chains linearly with `.then()` and `.catch()`. Observables (RxJS) manage streams of zero or more events over time, supporting map, filter, and throttle operators.

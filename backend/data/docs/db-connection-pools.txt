@@ -1,0 +1,2 @@
+Database Connection Pooling:
+Creating database connections is computationally expensive. Connection pooling maintains a cache of active connections reuse across incoming HTTP requests. This prevents server overhead and database connection limits saturation.

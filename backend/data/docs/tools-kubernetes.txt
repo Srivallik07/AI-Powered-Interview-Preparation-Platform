@@ -1,0 +1,2 @@
+Kubernetes Pods and Orchestration:
+Kubernetes coordinates container scaling. Core resources include Pods (smallest deployable units sharing network/storage), Deployments (manage replicas and rolling updates), Services (load-balance ingress to pods), and ConfigMaps/Secrets.

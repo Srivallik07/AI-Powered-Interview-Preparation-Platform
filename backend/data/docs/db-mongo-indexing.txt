@@ -1,0 +1,2 @@
+MongoDB Indexing Strategies:
+MongoDB uses B-Trees to index documents. Index types include Single Field, Compound (order of keys matters: Equality, Sort, Range rule), Multikey (arrays indexing), Text (search support), and Geospatial indexes. The `.explain()` command profiles query executions.

@@ -1,0 +1,2 @@
+DOM Event Propagation (Capturing and Bubbling):
+Events propagate in three phases: Capturing (root down to target), Target, and Bubbling (target up to root). By default, listeners trigger in the bubbling phase. Call `stopPropagation()` to halt event travel, and use event delegation to listen for child events at parent node levels.

@@ -1,0 +1,2 @@
+ACID Transaction Principles:
+ACID guarantees database reliability. Atomicity (all operations succeed or roll back), Consistency (transactions preserve schema constraints), Isolation (concurrent operations do not interfere), and Durability (committed changes persist after crashes). Isolation levels include Read Uncommitted, Read Committed, Repeatable Read, and Serializable.

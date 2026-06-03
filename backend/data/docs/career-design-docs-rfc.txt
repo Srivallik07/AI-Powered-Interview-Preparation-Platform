@@ -1,0 +1,2 @@
+Writing Engineering Design Documents (RFCs):
+Design docs propose technical solutions before coding. Sections include Abstract, Context/Goals, Non-Goals, Proposed Architecture, Database Schema shifts, Security considerations, Scale estimates, and alternative designs rejected.

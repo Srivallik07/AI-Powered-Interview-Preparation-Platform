@@ -1,0 +1,2 @@
+AWS Core Infrastructure Services:
+Amazon Web Services cloud services. EC2 (compute instances), S3 (object storage bucket), RDS (managed SQL database), Lambda (serverless functions), VPC (isolated virtual networks), and IAM (identity and access management policies).

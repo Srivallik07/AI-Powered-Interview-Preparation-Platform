@@ -1,0 +1,2 @@
+Domain Name System (DNS) Mechanics:
+DNS translates human-readable domain names to IP addresses. It uses recursive resolvers, root nameservers, TLD nameservers, and authoritative nameservers. Caching at the browser, OS, and resolver levels speeds up query resolution.

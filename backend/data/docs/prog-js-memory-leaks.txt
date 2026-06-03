@@ -1,0 +1,2 @@
+Preventing JavaScript Memory Leaks:
+Memory leaks occur when objects are no longer needed but remain reachable. Causes include global variables, forgotten timers/intervals, unremoved DOM event listeners, and closures retaining large scope variables. Profiling memory is done using Chrome DevTools Heap Snapshots.

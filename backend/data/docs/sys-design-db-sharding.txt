@@ -1,0 +1,2 @@
+Database Sharding and Partitioning:
+Sharding is a horizontal database partitioning technique where data is distributed across multiple physical machines. Keys are mapped using range-based, list-based, or hash-based sharding. Sharding helps scale databases beyond single-machine limits but introduces complexities like cross-shard joins and transaction management.

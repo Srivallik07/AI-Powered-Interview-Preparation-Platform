@@ -1,0 +1,2 @@
+CSS Box Model and Layout Engines:
+The CSS Box Model defines content, padding, border, and margin spaces around HTML elements. By default, `box-sizing: content-box` excludes padding/border from width. `border-box` includes them, making layouts predictable. Flexbox and Grid are modern layout engines.

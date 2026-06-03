@@ -1,0 +1,2 @@
+Load Balancing Techniques:
+Load Balancers distribute network or application traffic across multiple servers. Algorithms include Round Robin, Weighted Round Robin, Least Connections, and IP Hash. Layer 4 load balancing operates at the transport level (TCP/UDP), while Layer 7 operates at the application level (HTTP/HTTPS), allowing routing based on headers, cookies, or URL paths.

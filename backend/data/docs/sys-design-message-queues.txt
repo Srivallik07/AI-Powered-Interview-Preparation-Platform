@@ -1,0 +1,2 @@
+Message Queues and Event Streaming:
+Message queues (e.g. RabbitMQ) and event streaming platforms (e.g. Apache Kafka) decouple publishers and consumers in microservices. Message queues store tasks until a worker processes them, while event stream logs retain data over time, enabling event sourcing and replay capabilities.

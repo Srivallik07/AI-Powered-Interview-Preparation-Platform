@@ -1,0 +1,2 @@
+Docker Containerization Fundamentals:
+Docker isolates applications in containers using Linux namespaces, cgroups, and union file systems. Dockerfiles specify base images, layer instructions, environment variables, and run commands. Images are built and cached, ensuring dev-to-prod environment parity.

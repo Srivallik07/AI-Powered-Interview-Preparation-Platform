@@ -1,0 +1,2 @@
+Prototype Inheritance in JavaScript:
+JavaScript uses prototype-based inheritance where objects inherit properties and methods from other objects via a prototype chain. The `__proto__` property references an object's prototype, while the `prototype` property on constructor functions defines the shared methods. Class syntax is syntactic sugar over prototype chains.

@@ -1,0 +1,2 @@
+Understanding JavaScript Closures:
+A closure is the combination of a function bundled together with references to its surrounding state (the lexical environment). Closures allow inner functions to access outer scope variables even after the outer function has completed execution, enabling data privacy, currying, and memoization.

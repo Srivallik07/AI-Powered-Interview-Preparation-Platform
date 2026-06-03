@@ -1,0 +1,2 @@
+CI/CD Automation Pipelines:
+Continuous Integration automatically builds and tests code commits. Continuous Deployment deploys changes to staging/production automatically. Pipelines (GitHub Actions, Jenkins) enforce linters, test suites, and image packaging checks.

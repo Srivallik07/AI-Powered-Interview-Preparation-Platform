@@ -1,0 +1,2 @@
+SQL Indexing Structures (B-Trees):
+Indexes speed up SQL queries at the cost of slower writes. B-Trees and B+ Trees are standard structures, maintaining sorted balances for logarithmic search lookups. Clustered indexes dictate physical row order, while non-clustered indexes contain pointers to row keys.

@@ -1,0 +1,2 @@
+JSON Web Tokens (JWT) Architecture:
+JWTs securely transfer JSON payloads. They consist of Header, Payload (claims), and Signature. Signed using secrets (HMAC) or asymmetric keys (RSA). Access tokens are short-lived, while Refresh tokens are stored securely (httpOnly cookies) to fetch new ones.

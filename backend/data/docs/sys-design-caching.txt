@@ -1,0 +1,2 @@
+Caching Strategies in System Design:
+Caching is the process of storing copies of data in a temporary storage location (cache) to serve requests faster. Common strategies include Write-Through, Write-Around, and Write-Back. Cache eviction policies include LRU (Least Recently Used), LFU (Least Frequently Used), and FIFO (First In First Out). Redis and Memcached are popular in-memory data structures used for this purpose.

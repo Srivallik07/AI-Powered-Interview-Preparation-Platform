@@ -1,0 +1,2 @@
+Optimistic vs Pessimistic Concurrency Control:
+Pessimistic locking locks data rows until a transaction completes, preventing concurrent edits but reducing throughput. Optimistic locking assumes no conflicts and checks version columns before updates. If a version mismatch occurs, the update aborts and rolls back.

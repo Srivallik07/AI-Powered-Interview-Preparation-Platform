@@ -1,0 +1,2 @@
+Garbage Collection and Reference Counting:
+Node.js and browsers use the V8 engine, which manages memory via garbage collection. The primary algorithm is Mark-and-Sweep, where objects reachable from the root are marked, and unmarked objects are swept. Reference counting is another algorithm but is susceptible to circular reference memory leaks.

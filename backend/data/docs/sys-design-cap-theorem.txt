@@ -1,0 +1,2 @@
+Understanding the CAP Theorem:
+Formulated by Eric Brewer, the CAP Theorem states that a distributed system can guarantee at most two out of three characteristics: Consistency (all nodes see same data at same time), Availability (every request receives a non-error response), and Partition Tolerance (system operates despite node communication drops). In partition scenarios, systems must choose between consistency or availability.

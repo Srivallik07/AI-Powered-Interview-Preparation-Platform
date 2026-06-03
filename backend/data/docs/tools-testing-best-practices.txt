@@ -1,0 +1,2 @@
+Unit Testing and Mocking Best Practices:
+Tests guarantee code correctness. Unit tests verify individual functions in isolation. Integration tests check module interoperation. E2E tests script full browser interactions. Use mocking to isolate tests from database and network networks.

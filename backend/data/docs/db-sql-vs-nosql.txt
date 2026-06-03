@@ -1,0 +1,2 @@
+SQL vs NoSQL Databases:
+SQL databases (PostgreSQL, MySQL) are relational, use structured schemas, and enforce strict ACID. NoSQL databases (MongoDB, DynamoDB) are non-relational, schema-less, and scale horizontally using BASE (Basically Available, Soft state, Eventual consistency) models, suited for unstructured data.

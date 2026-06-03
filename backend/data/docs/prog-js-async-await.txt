@@ -1,0 +1,2 @@
+Async/Await and Promises Lifecycle:
+Promises represent eventual completion or failure of async operations. They exist in three states: Pending, Fulfilled, or Rejected. Async/await provides synchronous-looking syntax built on top of Promises, pausing execution within async functions using generator-like behaviors under the hood.

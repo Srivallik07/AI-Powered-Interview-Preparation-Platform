@@ -1,0 +1,2 @@
+STAR Framework for Behavioral Questions:
+The STAR method structures behavioral responses. Situation (set the context), Task (describe your responsibility), Action (explain what YOU did step-by-step), and Result (highlight the quantitative impact and lessons learned). Using metrics (e.g. 20% speedup) makes results concrete.

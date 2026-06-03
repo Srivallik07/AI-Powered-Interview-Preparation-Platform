@@ -1,0 +1,2 @@
+Agile and Scrum Methodologies:
+Agile prioritizes iterative delivery. Scrum divides work into Sprints (typically 2 weeks). Rituals include Sprint Planning, Daily Standups (yesterday, today, blockers), Sprint Review, and Retrospectives to inspect and improve team processes.

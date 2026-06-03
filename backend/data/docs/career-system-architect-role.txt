@@ -1,0 +1,2 @@
+The Role of a System Architect:
+System Architects translate business needs into technical architectures. They balance cost, security, performance, maintainability, and scalability tradeoffs, dictating technology stack choices, database designs, and cross-team integration paths.

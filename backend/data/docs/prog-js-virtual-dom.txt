@@ -1,0 +1,2 @@
+React Virtual DOM and Reconciliation:
+The Virtual DOM is an in-memory representation of the real DOM. When state changes, React creates a new virtual tree and compares it with the previous one using a diffing algorithm (Reconciliation). React updates only the modified elements in the batch to maximize paint performance.

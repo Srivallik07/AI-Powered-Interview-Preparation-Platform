@@ -1,0 +1,2 @@
+SQL Join Types and Algorithms:
+Joins merge rows based on matching columns. Types include Inner, Left, Right, and Full Outer Joins. Query planners execute joins using Nested Loop, Hash Join, or Sort-Merge Join algorithms depending on table size and index configurations.

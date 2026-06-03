@@ -1,0 +1,2 @@
+Redis Internals and Data Structures:
+Redis is an in-memory, single-threaded key-value store. It supports Strings, Lists (linked lists), Sets (unordered unique strings), Hashes (field-value maps), Sorted Sets (scores-ordered unique values), Bitmaps, and HyperLogLogs. Persistence uses RDB snapshots or AOF append logs.

@@ -1,0 +1,2 @@
+Team Communication and Collaboration:
+Communication is key. Share ideas via clear design docs (RFCs), maintain up-to-date wiki wikis, document code inline, explain technical limitations to non-technical stakeholders, and conduct constructive code reviews.

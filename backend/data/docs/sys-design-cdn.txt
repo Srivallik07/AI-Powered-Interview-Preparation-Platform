@@ -1,0 +1,2 @@
+Content Delivery Networks (CDN):
+A CDN is a geographically distributed network of proxy servers that cache static assets (HTML, CSS, JS, images, videos) closer to users. This minimizes latency, offloads traffic from origin servers, and mitigates DDoS attacks. Populating caches uses push or pull mechanisms.

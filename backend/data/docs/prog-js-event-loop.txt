@@ -1,0 +1,2 @@
+JavaScript Event Loop Internals:
+JavaScript is single-threaded, using an Event Loop to handle asynchronous code execution. It consists of the Call Stack, Web APIs, Callback Queue (Task Queue), and Microtask Queue. Microtasks (Promises, process.nextTick) have higher priority than macrotasks (setTimeout, setInterval, setImmediate) and are executed completely before the next event loop tick.

@@ -1,0 +1,2 @@
+Managing Project Deadlines and Slip Risks:
+When a deadline is in jeopardy, raise flags early. Present options: descoping non-critical items, shifting resources, or extending dates. Avoid silent crunches, which lead to technical debt, poor testing, and code quality degradation.

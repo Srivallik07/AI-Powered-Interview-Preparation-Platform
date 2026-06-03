@@ -1,0 +1,2 @@
+REST vs GraphQL Protocol Comparison:
+REST exposes resources via dedicated HTTP methods (GET, POST, etc.) on specific endpoints, prone to over-fetching. GraphQL exposes a single endpoint and allows clients to request exact fields, resolving over/under-fetching via structured query schemas.

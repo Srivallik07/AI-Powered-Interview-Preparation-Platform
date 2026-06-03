@@ -1,0 +1,2 @@
+Handling System Degradation Scenarios:
+Systems must degrade gracefully. Implement circuit breakers, fallback options (e.g. showing cached data), rate limiters to shield downstream servers, and queue configurations to absorb spike loads during outages.

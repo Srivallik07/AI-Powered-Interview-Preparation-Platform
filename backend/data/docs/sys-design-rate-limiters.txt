@@ -1,0 +1,2 @@
+Designing Rate Limiters:
+Rate limiters control the rate of traffic sent by a client or user. Common algorithms include Token Bucket, Leaky Bucket, Fixed Window Counter, Sliding Window Log, and Sliding Window Counter. They prevent resource exhaustion, mitigate DDoS attacks, and control API monetization limits.

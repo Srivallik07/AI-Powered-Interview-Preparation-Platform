@@ -1,0 +1,2 @@
+WebSockets for Real-Time Communication:
+WebSocket is a bidirectional, full-duplex communication protocol over a single TCP connection. It starts with an HTTP handshake and upgrades the connection to WebSocket. This is useful for chat apps, notification systems, and live financial dashboards where low-latency server-sent updates are crucial.

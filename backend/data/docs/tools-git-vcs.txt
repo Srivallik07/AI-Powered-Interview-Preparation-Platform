@@ -1,0 +1,2 @@
+Git Version Control Internals:
+Git is a distributed version control system. It tracks changes using snapshot nodes in a DAG (Directed Acyclic Graph). Commits represent snapshots, pointing to parent commits. Branching is lightweight, containing references to commit hashes.

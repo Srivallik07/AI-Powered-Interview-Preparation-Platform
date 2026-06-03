@@ -1,0 +1,2 @@
+Conflict Resolution in Engineering Teams:
+Disagreements regarding architecture are common. Resolve them by gathering objectively measured benchmarks, creating prototype proof-of-concepts, listening to alternate perspectives, focusing on business outcomes, and aligning with the team once a decision is finalized.

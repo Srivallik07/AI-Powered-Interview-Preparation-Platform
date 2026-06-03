@@ -1,0 +1,2 @@
+HTTPS and TLS/SSL Security Handshake:
+HTTPS encrypts HTTP traffic using TLS/SSL. The handshake negotiates cipher suites, validates server certificates via Certificate Authorities, and exchanges symmetric session keys using asymmetric cryptography (Diffie-Hellman).

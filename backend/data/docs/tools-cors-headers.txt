@@ -1,0 +1,2 @@
+Understanding Cross-Origin Resource Sharing (CORS):
+CORS is a browser security mechanism restricting cross-origin requests. Browsers send preflight OPTIONS requests to check allowed origins, methods, and headers. Configure CORS at the server level (Access-Control-Allow-Origin) to permit client requests.
