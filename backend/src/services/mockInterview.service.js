@@ -2,6 +2,7 @@ import { ChatGroq } from '@langchain/groq';
 import { retrieveContext } from './ragPipeline.service.js';
 import { evaluateLLMResponse } from './evaluation.service.js';
 import dotenv from 'dotenv';
+import { safeParseJSON } from '../utils/jsonParser.js';
 
 dotenv.config();
 
@@ -111,15 +112,7 @@ Matched: ${JSON.stringify(session.skillGaps?.matchedSkills)}
 Missing: ${JSON.stringify(session.skillGaps?.missingSkills)}`;
 
     const response = await model.invoke(prompt);
-    let content = response.content.trim();
-
-    if (content.startsWith('```json')) {
-      content = content.replace(/^```json/, '').replace(/```$/, '').trim();
-    } else if (content.startsWith('```')) {
-      content = content.replace(/^```/, '').replace(/```$/, '').trim();
-    }
-
-    const questions = JSON.parse(content);
+    const questions = safeParseJSON(response.content);
     return questions;
   } catch (error) {
     console.error('Error generating questions with LLM, falling back to mock generator:', error);
@@ -208,15 +201,7 @@ ${userAnswer}`;
     const response = await model.invoke(prompt);
     const latencyMs = Date.now() - startTime;
 
-    let content = response.content.trim();
-
-    if (content.startsWith('```json')) {
-      content = content.replace(/^```json/, '').replace(/```$/, '').trim();
-    } else if (content.startsWith('```')) {
-      content = content.replace(/^```/, '').replace(/```$/, '').trim();
-    }
-
-    const evaluation = JSON.parse(content);
+    const evaluation = safeParseJSON(response.content);
 
     // Track LLM performance and evaluation metrics
     await evaluateLLMResponse({

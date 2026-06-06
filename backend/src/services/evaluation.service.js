@@ -1,6 +1,7 @@
 import EvaluationLog from '../models/EvaluationLog.js';
 import { ChatGroq } from '@langchain/groq';
 import dotenv from 'dotenv';
+import { safeParseJSON } from '../utils/jsonParser.js';
 
 dotenv.config();
 
@@ -92,15 +93,7 @@ Generated Response:
 ${response}`;
 
     const evalResponse = await model.invoke(evalPrompt);
-    let content = evalResponse.content.trim();
-
-    if (content.startsWith('```json')) {
-      content = content.replace(/^```json/, '').replace(/```$/, '').trim();
-    } else if (content.startsWith('```')) {
-      content = content.replace(/^```/, '').replace(/```$/, '').trim();
-    }
-
-    const scores = JSON.parse(content);
+    const scores = safeParseJSON(evalResponse.content);
 
     const log = await EvaluationLog.create({
       interviewId,

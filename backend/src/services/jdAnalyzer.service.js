@@ -1,5 +1,6 @@
 import { ChatGroq } from '@langchain/groq';
 import dotenv from 'dotenv';
+import { safeParseJSON } from '../utils/jsonParser.js';
 
 dotenv.config();
 
@@ -70,15 +71,7 @@ Role Requirements:
 ${roleRequirements}`;
 
     const response = await model.invoke(prompt);
-    let content = response.content.trim();
-    
-    if (content.startsWith('```json')) {
-      content = content.replace(/^```json/, '').replace(/```$/, '').trim();
-    } else if (content.startsWith('```')) {
-      content = content.replace(/^```/, '').replace(/```$/, '').trim();
-    }
-
-    return JSON.parse(content);
+    return safeParseJSON(response.content);
   } catch (error) {
     console.error('Error analyzing job description with LLM, falling back to mock analyzer:', error);
     return {

@@ -9,12 +9,16 @@ export const AuthPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [role, setRole] = useState('user');
-  const [errorMsg, setErrorMsg] = useState('');
+  const location = useLocation();
+  const [errorMsg, setErrorMsg] = useState(
+    new URLSearchParams(location.search).get('expired') === 'true'
+      ? 'Your session has expired. Please log in again.'
+      : ''
+  );
   const [successMsg, setSuccessMsg] = useState('');
   
   const { login, register, loading } = useAuth();
   const navigate = useNavigate();
-  const location = useLocation();
 
   const from = location.state?.from?.pathname || '/dashboard';
 

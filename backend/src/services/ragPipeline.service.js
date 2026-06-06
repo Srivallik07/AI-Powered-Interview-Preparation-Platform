@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 import { ChatGroq } from '@langchain/groq';
+import { safeParseJSON } from '../utils/jsonParser.js';
 
 dotenv.config();
 
@@ -304,15 +305,7 @@ Candidate Contexts:
 ${dedupedChunks.map((c, idx) => `[Paragraph ${idx}]:\n${c.text}`).join('\n\n')}`;
 
     const response = await model.invoke(rerankPrompt);
-    let content = response.content.trim();
-
-    if (content.startsWith('```json')) {
-      content = content.replace(/^```json/, '').replace(/```$/, '').trim();
-    } else if (content.startsWith('```')) {
-      content = content.replace(/^```/, '').replace(/```$/, '').trim();
-    }
-
-    const scores = JSON.parse(content);
+    const scores = safeParseJSON(response.content);
     
     const scoredChunks = scores.map(item => {
       return {

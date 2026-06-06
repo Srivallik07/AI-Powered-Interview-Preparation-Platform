@@ -10,7 +10,7 @@ const router = express.Router();
 
 const generateTokens = (userId) => {
   const secret = process.env.JWT_SECRET || 'supersecretjwtkeyforinterviewprepplatform12345!';
-  const accessToken = jwt.sign({ id: userId }, secret, { expiresIn: '1h' });
+  const accessToken = jwt.sign({ id: userId }, secret, { expiresIn: '7d' });
   const refreshToken = jwt.sign({ id: userId }, secret, { expiresIn: '7d' });
   return { accessToken, refreshToken };
 };
